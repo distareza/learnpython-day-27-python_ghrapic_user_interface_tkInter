@@ -23,7 +23,7 @@ def calculate() :
         km_output = mile_input * 1.609
         label_result["text"] = "{:,.2f}".format(km_output)
     except Exception as ex:
-        tkinter.messagebox.showerror(message=f"Error {ex}")
+        tkinter.messagebox.showerror(title="oops", message=f"Error {ex}")
 
 button = Button(text="calculate",command=calculate)
 button.grid(row=2, column=1)
